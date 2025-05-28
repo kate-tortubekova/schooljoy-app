@@ -1,0 +1,176 @@
+.badges-panel {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #667085;
+}
+
+.custom-tabs {
+  border-bottom: 1px solid #EAEDF2;
+  margin-bottom: 0;
+  padding: 0 24px;
+}
+
+.custom-tabs .nav-item {
+  margin-bottom: 0;
+}
+
+.custom-tabs .nav-link {
+  border: none;
+  border-radius: 0;
+  color: #6B7280;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 16px 0;
+  margin-right: 32px;
+  background: transparent;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.custom-tabs .nav-link:hover {
+  color: #3B82F6;
+  background: transparent;
+  border-color: transparent;
+}
+
+.custom-tabs .nav-link.active {
+  color: #0B7CDA;
+  background: transparent;
+  border-bottom-color: #0B7CDA;
+  font-weight: 500;
+}
+
+.tab-content-area {
+  padding: 24px;
+  background: white;
+}
+
+.search-container {
+  margin-bottom: 24px;
+}
+
+.search-input {
+  border: 1px solid #EAEDF2;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 12px 16px 12px 40px;
+  font-size: 14px;
+  background: #FAFBFC;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.search-input:focus {
+  border-color: #3B82F6;
+  background: white;
+}
+
+.table-container {
+  border-radius: 8px;
+  overflow: hidden;
+  border: none;
+}
+
+.badges-table {
+  margin-bottom: 0;
+  font-size: 14px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.badges-table thead {
+  background-color: #F9FAFB;
+}
+
+.badges-table thead th {
+  border: none;
+  border-bottom: 1px solid #EAEDF2;
+  padding: 16px 20px;
+  width: 16.66%;
+}
+
+.badges-table thead th.table-header {
+  color: #667085 !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  font-family: 'Montserrat', sans-serif !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+}
+
+.badges-table tbody td {
+  border: none;
+  border-bottom: 1px solid #EAEDF2;
+  padding: 16px 20px;
+  vertical-align: middle;
+  width: 16.66%;
+}
+
+.badges-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.badges-table tbody tr:hover {
+  background-color: #F9FAFB;
+}
+
+.badge-icon {
+  width: 40px;
+  height: 40px;
+  background: #E3E2FD;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-right: 12px;
+}
+
+.badge-title {
+  font-weight: 500;
+  color: #374151;
+}
+
+.completion-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.progress-container {
+  min-width: 120px;
+  flex: 1;
+}
+
+.progress {
+  height: 8px;
+  background-color: #E5E7EB;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background: #0B7CDA;
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.completion-text {
+  font-weight: 600;
+  color: #374151;
+  font-size: 13px;
+  min-width: 35px;
+}
+
+.table-content {
+  color: #344054;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}

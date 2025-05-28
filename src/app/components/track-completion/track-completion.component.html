@@ -1,0 +1,30 @@
+<div class="border-0 h-100">
+    <h5 class="track-completion-title mb-4">Track Completion</h5>
+
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="text-center mb-4 position-relative">
+            <!-- Chart.js Canvas -->
+            <canvas #chartContainer class="chart-canvas"></canvas>
+            <!-- Center Text -->
+            <div class="position-absolute top-50 start-50 translate-middle text-center chart-center-text">
+                <div class="track-completion-total-students">{{ totalStudents }}</div>
+                <div class="track-completion-total-students-label">Total Students</div>
+            </div>
+        </div>
+
+        <div class="legend-container ms-5">
+            <div class="legend-item" *ngFor="let status of statusData">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center legend-left-section">
+                        <div class="legend-color-square" [ngClass]="status.colorClass"></div>
+                        <span class="legend-label">{{ status.label }}</span>
+                    </div>
+                    <div class="d-flex align-items-center legend-right-section">
+                        <span class="legend-count">{{ status.count }}</span>
+                        <i class="legend-chevron fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

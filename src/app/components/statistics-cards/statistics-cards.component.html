@@ -1,0 +1,11 @@
+<!-- Statistics Cards -->
+<div class="statistics-grid">
+  <div class="statistic-card" *ngFor="let stat of statistics">
+    <div class="card border-1 h-100 p-4">
+      <div class="p-0">
+        <div class="statistic-value">{{ stat.value }}</div>
+        <div class="statistic-label">{{ stat.label }}</div>
+      </div>
+    </div>
+  </div>
+</div>

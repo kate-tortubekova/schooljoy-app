@@ -1,59 +1,114 @@
-# SchooljoyApp
+# SchoolJoy - Angular Application
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.13.
+A modern Angular application with TypeScript and Bootstrap for creating contemporary web interfaces with a dashboard for tracking student progress and badges.
 
-## Development server
+## Technologies
 
-To start a local development server, run:
+- **Angular 19** - Modern framework for building web applications
+- **TypeScript** - Typed JavaScript
+- **Bootstrap 5** - CSS framework for styling
+- **SCSS** - CSS preprocessor
+- **Font Awesome** - Icon library
+- **Git** - Version control system
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed on your system:
+
+- **Node.js** (version 18 or higher) - [Download here](https://nodejs.org/)
+- **npm** (comes with Node.js)
+- **Angular CLI** (optional but recommended)
+
+## Installation and Setup
+
+### 1. Navigate to the project directory
 
 ```bash
+git clone <repository-url>
+cd schooljoy-app
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Install Angular CLI globally (if not already installed)
+
+```bash
+npm install -g @angular/cli
+```
+
+## Running the Application
+
+### Development Server
+
+```bash
+npm start
+# or
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+The application will be available at `http://localhost:4200`
 
-## Code scaffolding
+The app will automatically reload if you change any of the source files.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Production Build
 
 ```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
+npm run build
+# or
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Project Structure
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+```
+schooljoy-app/
+├── src/
+│   ├── app/
+│   │   ├── components/
+│   │   │   ├── header/                    # Navigation header
+│   │   │   ├── dashboard/                 # Main dashboard container
+│   │   │   ├── dashboard-header/          # Dashboard header with back button
+│   │   │   ├── main-content/              # Main content orchestrator
+│   │   │   ├── track-completion/          # Donut chart and legend
+│   │   │   ├── statistics-cards/          # Statistics cards (4 metrics)
+│   │   │   └── badges-table/              # Badges table with search
+│   │   ├── app.component.html             # Main template
+│   │   ├── app.component.scss             # Component styles
+│   │   ├── app.component.ts               # Component logic
+│   │   ├── app.config.ts                  # Application configuration
+│   │   └── app.routes.ts                  # Routes
+│   ├── styles.scss                        # Global styles
+│   ├── main.ts                            # Entry point
+│   └── index.html                         # HTML template
+├── public/                                # Static files
+├── angular.json                           # Angular configuration
+├── package.json                           # Project dependencies
+└── tsconfig.json                          # TypeScript configuration
+```
+
+## Development Commands
 
 ```bash
+# Start development server
+ng serve
+
+# Generate new component
+ng generate component component-name
+
+# Generate new service
+ng generate service service-name
+
+# Run tests
 ng test
-```
 
-## Running end-to-end tests
+# Lint code
+ng lint
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+# Build for production
+ng build

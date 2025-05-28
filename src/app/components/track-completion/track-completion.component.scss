@@ -1,0 +1,107 @@
+.track-completion-title {
+    color: #344054;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.track-completion-total-students {
+    color: #344054;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.track-completion-total-students-label {
+    color: #667085;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Chart.js canvas container */
+.chart-canvas {
+  width: 280px;
+  height: 280px;
+  max-width: 280px;
+  max-height: 280px;
+}
+
+/* Center text positioning */
+.chart-center-text {
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Legend container */
+.legend-container {
+  margin-left: 1rem; // ms-4 equivalent
+}
+
+.legend-item {
+  margin-bottom: 1rem; // mb-3 equivalent
+}
+
+.legend-left-section {
+  flex: 1;
+  min-width: 0;
+}
+
+.legend-right-section {
+  min-width: 60px;
+  justify-content: flex-end;
+}
+
+.legend-color-square {
+  width: 12px;
+  height: 12px;
+  margin-right: 0.5rem;
+  border-radius: 20%;
+  // me-2 equivalent
+}
+
+.legend-label {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  color: #667085;
+  margin-right: 0.5rem; // me-2 equivalent
+  width: 100px;
+  display: inline-block;
+}
+
+.legend-count {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  color: #667085;
+  margin-right: 0.5rem;
+  min-width: 20px;
+  text-align: right;
+}
+
+.legend-chevron {
+  margin-left: 0.5rem; // ms-2 equivalent
+  color: #6c757d; // text-muted equivalent
+  font-size: 10px;
+  width: 12px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Custom legend colors */
+.legend-completed {
+  background-color: #5CDD9F !important;
+}
+
+.legend-in-progress {
+  background-color: #F4AF29 !important;
+}
+
+.legend-not-started {
+  background-color: #AEB2BA !important;
+}
+
+.legend-at-risk {
+  background-color: #F36184 !important;
+}

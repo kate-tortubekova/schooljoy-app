@@ -1,0 +1,46 @@
+.header-dashboard-link {
+    color: #344054;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.custom-input-group {
+    width: 350px;
+
+    .input-group-text {
+        background-color: white;
+        border-right: none;
+        border-color: #EAEDF2;
+    }
+
+    .form-control {
+        border-left: none;
+        border-right: 1px solid #EAEDF2;
+        border-color: #EAEDF2;
+
+        &:focus {
+            border-color: #EAEDF2;
+            border-right: 1px solid #EAEDF2;
+            box-shadow: none;
+        }
+    }
+
+    .btn {
+        border-left: none;
+        border-color: #EAEDF2;
+
+        &:focus {
+            border-color: #EAEDF2;
+            box-shadow: none;
+        }
+    }
+}
+
+.header-badge-button {
+    border-color: #EAEDF2;
+    border-radius: 6px;
+    color: #344054;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+}

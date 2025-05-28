@@ -1,0 +1,28 @@
+.dashboard-header-back-button {
+    color: #667085;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dashboard-header-title {
+    color: #344054;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dashboard-header-ellipsis-button {
+    border-color: #EAEDF2;
+}
+
+.btn {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
